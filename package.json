@@ -1,0 +1,11 @@
+{
+	"name": "BhandBot",
+	"version": "1.0.0",
+	"description": "Bhand hai ye bot",
+	"main": "bot.js",
+	"author": "ChickenChef",
+	"dependencies": {
+		"discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+		"winston": "^3.2.1"
+	}
+}
