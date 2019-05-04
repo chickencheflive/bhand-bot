@@ -5,7 +5,6 @@ var auth = require('./auth.json');
 
 // Configure logger settings
 
-
 logger.remove(logger.transports.Console);
 logger.add(new logger.transports.Console, {
     colorize: true
@@ -59,8 +58,16 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 	user + ' ka dimaaag nahi goo hai goo',
 	user + ' ke picche ladkiyo ki line lagi rehti hai',
 	'5rs ki pepsi, mera ' + user + ' sexy',
-	user + ' rakhi sawant ka crush hai ',
+	user + ', bc iske toh naam se hi ulti aa rahi hai mujhe ',
 	
+	);
+	
+	var drink = Array(user +' ke liye ek peg Jack Daniels neat',
+	user +' ke liye 4 shots vodka ke',
+	user +' ko ek pitcher Beer ka',
+	user +' ke liye Rum bantegi',
+	user +', Daaru chhod, Tu mera moot pee le',
+	'Fokat ki daaru chahie?' + user + ',Bhaag yahan se! BHAAG!'
 	);
        
         //args = args.splice(1);
@@ -89,6 +96,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: praise[Math.floor(Math.random()*praise.length)]
+                });	
+				
+            break;
+			case 'drink':
+                bot.sendMessage({
+                    to: channelID,
+                    message: drink[Math.floor(Math.random()*drink.length)]
                 });	
 				
             break;
